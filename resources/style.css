@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-size: 16px;
+    --primary-color: OrangeRed;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+nav {
+    padding: 0.75rem 1.25rem;
+    background-color: var(--primary-color);
+}
+
+nav li {
+    margin: 20px 10px;
+    color: white;
+    display: inline-block;
+}
+
+header img {
+    display: block;
+    margin: 5rem auto;
+    width: 50%;
+}
+
+.container {
+    margin: 20px;
+    display: inline-block;
+}
+
+.supporting img {
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin: 0 5% 0 0;
+}
+
+.gallery img {
+    display: block;
+    float: left;
+    width: calc(100% /3)
+}
+
+.location img {
+    width: 100%;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav {
+    float: right;
+}
+
+@media screen and (max-width: 425px) {
+    header img {
+        width: 50%;
+    }
+
+    .supporting img {
+        display: none
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    header img {
+        width: 20%;
+    }
+}
